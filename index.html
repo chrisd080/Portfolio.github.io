@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>My Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="js.js"> 
+
+	<!-- This is the file containing the important information for the jquery slideshow to run -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+	<div id ="container">
+		<h1>Christian Dsouza</h1>
+		
+		
+		<nav>
+			<a href="#one" style="text-decoration: underline;">Home</a><br>
+			<a href="#two">- Who am i?</a><br>
+			<a href="#three">- Web design and me</a><br>
+			<a href="#four">- About this blog</a><br><br>
+			<a href="C:\Users\Christian\Desktop\Portfolio Website\index1.html" style="text-decoration: underline;">Blog Posts</a><br><br>
+			<a href="C:\Users\Christian\Desktop\Portfolio Website\index2.html" style="text-decoration: underline;">Reflections</a><br><br>
+			<a href="C:\Users\Christian\Desktop\Portfolio Website\index3.html" style="text-decoration: underline;">Interaction Design work</a>
+		</nav> <br><br>
+		<br>
+
+
+
+	<section id="one">
+      <img src="img/me.jpg" style="height: 700px;  width: 1500px; margin-left: -252px; padding-top: 10px;" >
+	</section>
+
+
+	<header>
+		<section id="two">
+			<h2>Who am I?</h2>
+			<p>My name is Christian Dsouza. I am 19 years old and inside my second year at Victoria University of Wellington studying a degree in Interaction design. I live and grew up in Wellington and I attended a school called Tawa college (for 5 years) which is about 30 minutes from town. A bit about myself outside of studying is that i have a job working at Converse (outlet store) which i have been for almost one and a half year so far. I am and have been very much into sports including physical activities since i was 5 years old and started playing cricket and football which in fact is still my favorite sport.</p>
+		<img src="C:\Users\Christian\Desktop\Portfolio Website\img\tc.png" style="height: 200px; width: 200px; margin-top: 50px; margin-left: 50px;" ><br>
+		<img src="C:\Users\Christian\Desktop\Portfolio Website\img\vuw.png" style="height: 280px; width: 300px;  margin-top: -250px; margin-left: 350px;"><br>
+		<img src="C:\Users\Christian\Desktop\Portfolio Website\img\cv.png" style="height: 350px; margin-top: -315px; margin-left: 600px;">
+		
+		</section>
+	</header>
+
+	
+
+	<section id="three">
+		<h2>Web design and me</h2>
+		<p>My choice to study interaction design and web design stems from my years of studying a course called Digital Information Technology (DIT) which i took in all my 5 years at my college. What made me attracted and persistance on taking this course was not only the helpful teacher who i mostly had, but i loved the ability to design and create websites and the very broad requirements for our projects would always excite me as i have always loved the process of coming up with new ways of thinking and ideas, and when im not restricted to specific thoughts/answers, i am able to create better work. This was also the course which i always used to get the highest mark in as compared to all my other courses which would range in which the consistency of my results along with my love for design led me into taking this couse at University. </p>
+
+
+	</section>
+
+	<header>
+		<section id="four">
+			<h2>About this blog</h2>
+			<p>In this blog, i will be putting together  the work i have produced in University so far studying my Design Major of Interaction Design, as part of a portfolio. So far, what you will see are all related to my first mini kind of assignment which was creating this blog which in turn was my first website created not only in this course but in University as a whole. Below you can see some of the wireframes which i created to base my final layout of my blog (current one) on.</p>
+
+
+	<br>
+
+	
+		<!-- slideshow box and images -->
+<div id="slideshow">
+
+	<div>
+	  <img src="C:\Users\Christian\Desktop\Portfolio Website\img\w1.JPG" style="width:1430px; height:500px; margin-left: -252px;"/>
+	</div>
+	
+	<div>
+	  <img src="C:\Users\Christian\Desktop\Portfolio Website\img\w2.JPG" style="width:1430px; height:500px; margin-left: -252px;"/>
+	</div>
+	
+	<div>
+	  <img src="C:\Users\Christian\Desktop\Portfolio Website\img\w3.JPG" style="width:1430px; height:500px; margin-left: -252px;"/>
+	</div>
+
+</div>
+
+ <!-- Setting for slideshow - must be included in index page as well as a linked file so the browser knows how and where to run the script-->
+<script>
+
+	$("#slideshow > div:gt(0)").hide();
+
+	setInterval(function() {
+	$('#slideshow > div:first')
+	.fadeOut(1000)
+	.next()
+	.fadeIn(1000)
+	.end()
+	.appendTo('#slideshow');
+	}, 3000);
+
+</script>
+
+
+</section>
+</header>
+
+
+
+	<footer style="padding:20px;"><strong>© 2020 Christian Dsouza</strong></footer>
+
+</body>
+
+</html>

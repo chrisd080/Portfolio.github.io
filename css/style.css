@@ -1,0 +1,97 @@
+
+
+body{
+	
+	font-family: sans-serif;
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img{
+	max-width: 1500px;
+}
+
+header{
+	background-color: teal;
+	color: white; /* more readable on an orange background */
+	padding-top : 2px;
+	padding-bottom: 20px;
+}
+
+    /* position of slideshow on the page */
+	#slideshow { 
+		margin-left: -215px;
+		position: relative; 
+		width: 1415px; 
+		height: 485px; 
+		padding: 10px; 
+		box-shadow: 0 0 20px rgba(0,0,0,0.4);    /* black shadow appearing from slideshow */
+		background-color: rgb(0, 0, 0);
+	}
+	
+	/* postion of images within the slideshow */
+	#slideshow > div { 
+		margin-top: -7px;
+		margin-left: 245px;
+		position: absolute; 
+		top: 10px; 
+		left: 10px; 
+		right: 10px; 
+		bottom: 10px; 
+	}
+
+#container {
+	height: 350px;
+	background-color: purple;
+	margin-top: -50px;
+}
+
+nav{
+	width: 50%;
+	height: 30px;
+	float: right;
+	margin-top: -110px;
+	margin-right: -310px;
+
+}
+
+nav a {
+	float: left;
+	margin-top: -40px;
+	margin-left: 0px;
+	line-height: 20px;
+	margin-right: -2.4em;
+	text-decoration: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover{
+	color:  #267f85;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+h1{
+	font-size: 70px;
+	margin-left: 150px;
+	padding-top: 35px;
+}
+
+h2{
+	text-align: center;
+	font-size: 50px;
+}
+
+
+footer {
+	text-align: center;
+	background-color: purple;
+}
